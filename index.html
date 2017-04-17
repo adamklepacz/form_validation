@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontello.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="vievport" content="width=device-width, initial-scale=1">
+	<title>WebDevChallange1</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- Walidacja forumlarzy -->
+    <script src="js/validate_script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#"><img width="429" height="111" src="img/logo.png" alt="Masterlab creative"></a>
+    </header>
+    <main>
+        <div class="left-col">
+            <div class="form-wrapper">
+                <h1>Register Form</h1>
+                <form>
+                    <label class="input-wrapper"><i class="icon-user"></i><input type="text" required name="username" placeholder="Username"></label>
+                    <label class="input-wrapper"><i class="icon-lock"></i><input type="text" required name="password" placeholder="Password" id="password"></label>
+                    <label class="input-wrapper"><i class="icon-lock"></i><input type="text" required name="confirm_password" placeholder="Confirm password" id="confirm_password"></label>
+                    <label class="input-wrapper"><i class="icon-mail"></i><input type="text" required name="email" placeholder="Email"></label>
+                    <label class="input-wrapper"><i class="icon-location"></i>
+                        <select class="loc-select" required>
+                            <option value="" required disabled selected hidden>Your location</option>
+                            <option>US</option>
+                            <option>Europe</option>
+                            <option>Asia</option>
+                            <option>Australia</option>
+                            <option>Africa</option>
+                        </select>
+                    </label> 
+                    <input type="checkbox" id="c1" name="c1" required>
+                    <label for="c1"><span id="span"><strong class="no-border gradient-buttons"></strong></span><p id="p">I have read and accept the terms of use</p></label>
+                    <input type="submit" value="Sign up" class="gradient-buttons">
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <h1>Send email</h1>
+                <form>
+                    <label class="input-wrapper"><i class="icon-user"></i><input type="text" required name="name" placeholder="Your name"></label>
+                    <label class="input-wrapper"><i class="icon-mail"></i><input type="text" required name="email" placeholder="Your email"></label>
+                    <label class="input-wrapper message-area"><textarea name="message" required placeholder="Type your message..."></textarea></label>
+                    <input type="checkbox"  id="c2" name="copy-email" value="true"><label for="c2">
+                    <span><strong class="no-border gradient-buttons"></strong></span><p>Send copy to me</p>
+                    </label>
+                    <input type="submit" value="Send email" class="gradient-buttons">
+                </form>
+            </div>
+        </div>  
+        <div class="right-col">
+            <div class="form-wrapper">
+                <h1>Sign In Form</h1>
+                <form action="#" method="post">
+                    <label class="input-wrapper"><i class="icon-user"></i><input type="text" required name="username" placeholder="Username"></label>
+                    <label class="input-wrapper"><i class="icon-lock"></i><input type="text" required name="password" placeholder="Password"></label>
+                    <input type="checkbox" id="c3" name="rembember-me" value="true"><label for="c3"><span><strong class="no-border gradient-buttons"></strong></span>
+                    <p>Rembember me</p></label>
+                    <input type="submit" value="Sign in" class="right-button gradient-buttons">
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <h1>Recover Form</h1>
+                <form action="#" method="post">
+                    <label class="input-wrapper"><i class="icon-mail"></i><input type="text" required name="email" placeholder="Enter your email"></label>
+                    <label class="input-wrapper"><i class="icon-mobile"></i><input type="tel" required name="phone" placeholder="Enter your Phone number"></label>
+                    <input type="submit" name="recovery" vaule="Send" class="gradient-buttons">
+                    <input type="submit" value="Done" class="gradient-buttons right-button">
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <h1>Subscribe Form</h1>
+                <form action="#" method="post">
+                    <label class="input-wrapper"><i class="icon-mail"></i><input type="text" required name="email" placeholder="Enter your Email"></label>
+                    <input type="submit" value="Subscribe" class="gradient-buttons">
+                    <input type="submit" value="No, thanks" id="no-agreement-button" class="gradient-buttons right-button">
+                </form>
+            </div>
+                <a href="#"><img width="354" height="137" src="img/logo-footer.png" alt="Masterlab creative"></a>
+        </div>
+    </main>
+</body>
+</html>
